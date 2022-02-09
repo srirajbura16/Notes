@@ -46,3 +46,15 @@ When an array is created, the computer allocates cells in memory to accommodate 
 - Deleting takes one step.
 - For an array of five elements, we’d spend one step deleting the first element, and four steps shifting the four remaining elements.
 - The worst-case or maximum steps would be O(n)
+
+## Sets: How a Single Rule Can Affect Efficiency (Array Based)
+
+A set is a data Structure that does not allow duplicate values to be contained within, and therefore useful when you need to ensure that you don’t have duplicated data.
+
+Array based sets and arrays have same efficiency in reading, searching, and deletion. But not insertion.
+
+The computer needs to determine that value being inserted is not already in the set. The computer would search the whole array before inserting. O(n+1)
+
+Inserting at the beginning is the worst case because the computer needs to search(O(n)), shift elements to the right(0(n)), and insert(O(1)). (2n + 1)
+
+The difference between an array and array based set is insertion. Array insertion is more efficient than sets. Sets should be used when you need to ensure no duplicate data.
