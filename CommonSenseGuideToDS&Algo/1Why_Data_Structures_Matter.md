@@ -23,9 +23,12 @@
 
 ### Analyzing Array data structure efficiency
 
+When an array is created, the computer allocates cells in memory to accommodate the array. Every cell in memory has a specific address that is represented with a number and sequential.
+
 **Reading**
 
-- Takes one step to read from the array.
+- Takes one step to read from the array. O(1)
+- Actually takes 2 steps. The computer jumps to where the array is allocated in memory and adds index to memory cell address.
 
 **Searching**
 
@@ -36,7 +39,7 @@
 
 - **Insert end**: many programming languages allocate additional memory cells to arrays, so in case of adding new elements at the end would only take one step O(1)
 - **Insert middle**: shift elements to make space for the incoming element. O(n)
-- **Insert beginning**: This is the worst-case scenario as all elements need to shift which would take n + 1 steps.
+- **Insert beginning**: This is the worst-case scenario as all elements need to shift which would take n + 1 steps. 0(n)
 
 **Deletion**
 
