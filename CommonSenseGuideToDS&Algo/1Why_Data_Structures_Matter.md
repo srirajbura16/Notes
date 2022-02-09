@@ -23,12 +23,12 @@
 
 ### Analyzing Array data structure efficiency
 
-When an array is created, the computer allocates cells in memory to accommodate the array. Every cell in memory has a specific address that is represented with a number and sequential.
+When an array is created, the computer allocates cells in memory to accommodate the array. Every cell in memory has a specific address that is represented with a number and in sequential order.
 
 **Reading**
 
 - Takes one step to read from the array. O(1)
-- Actually takes 2 steps. The computer jumps to where the array is allocated in memory and adds index to memory cell address.
+- Actually takes 2 steps. The computer jumps to beginning of where the array is allocated in memory and adds index to memory cell address.
 
 **Searching**
 
