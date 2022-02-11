@@ -58,3 +58,21 @@ The computer needs to determine that value being inserted is not already in the 
 Inserting at the beginning is the worst case because the computer needs to search(O(n)), shift elements to the right(0(n)), and insert(O(1)). (2n + 1)
 
 The difference between an array and array based set is insertion. Array insertion is more efficient than sets. Sets should be used when you need to ensure no duplicate data.
+
+## Exercises
+
+1. For an array containing 100 elements, provide the number of steps the following operations would take:
+   1. Reading → 1 step
+   2. Searching for a value not contained within the array → N steps
+   3. Insertion at the beginning of the array → N + 1
+   4. Insertion at the end of the array → 1
+   5. Deletion at the beginning of the array → N
+   6. Deletion at the end of the array → 1
+2. For an array-based set containing 100 elements, provide the number of steps the following operations would take:
+   1. Reading → 1 step
+   2. Searching → N
+   3. Insert beginning → 2n + 1
+   4. Insert end → N + 1
+   5. Delete beginning → N
+   6. Delete end → 1
+3. count all instance of value (searching) → N times
